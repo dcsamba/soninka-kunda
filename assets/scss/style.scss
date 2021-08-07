@@ -1,0 +1,127 @@
+/*============================================================
+[Master Stylesheet]
+Theme Name:     SEROUJA
+Version:        1.0
+Author:         athemeart
+URL:            https://themeforest.net/user/athemeart
+=========================================================*/
+/*=======================================================
+TABLE OF CONTENTS:
+
+0.1  global Style
+
+======section stylsheet======
+
+0.2  header section
+0.3  header section 2
+0.4  banner section
+0.5  banner section 2
+0.6  feature section
+0.7  about section
+0.8  about section 2 
+0.9  choosing reason section
+1.0  service section
+1.1  service section 2
+1.2  counter section
+1.3  profit chart section
+1.4  portfolio section
+1.5  testimonial section
+1.6  proposal section
+1.7  faq section
+1.8  team section
+1.9  blog section
+2.0  blog section 2
+2.1  brand section
+2.2  footer section
+
+======inner page stylsheet======
+
+2.3  breadcrumb section for all page
+2.4  about page
+2.5  service page
+2.6  service details page
+2.7  team & team single page
+2.8  portfolio page
+2.9  portfolio details page
+3.0  blog grid & blog details page
+3.1  contact page
+
+======responsive stylsheet======
+
+3.2  responsive layout for all page*/
+
+
+@import "main/variable";
+/*########## 1. global style ##########*/
+@import "main/global";
+
+
+/*########## section style ##########*/
+
+//*========== 2. header section ==========*//
+@import "sections/header";
+//*========== 3. header section 2 ==========*//
+@import "sections/header-2";
+//*========== 4. banner section ==========*//
+@import "sections/banner";
+//*========== 5. banner section 2 ==========*//
+@import "sections/banner-2";
+//*========== 6. feature section ==========*//
+@import "sections/feature";
+//*========== 7. about section ==========*//
+@import "sections/about";
+//*========== 8. about section 2 ==========*//
+@import "sections/about-2";
+//*========== 9. choosing reason section ==========*//
+@import "sections/choosing-reason";
+//*========== 10. service section ==========*//
+@import "sections/service";
+//*========== 11. service section 2 ==========*//
+@import "sections/service-2";
+//*========== 12. counter section ==========*//
+@import "sections/counter";
+//*========== 13. profit chart section ==========*//
+@import "sections/profit-chart";
+//*========== 14. portfolio section ==========*//
+@import "sections/portfolio";
+//*========== 15. testimonial section ==========*//
+@import "sections/testimonial";
+//*========== 16. proposal section ==========*//
+@import "sections/proposal";
+//*========== 17. faq section ==========*//
+@import "sections/faq";
+//*========== 18. team section ==========*//
+@import "sections/team";
+//*========== 19. blog section ==========*//
+@import "sections/blog";
+//*========== 20. blog section 2 ==========*//
+@import "sections/blog-2";
+//*========== 21. brand section ==========*//
+@import "sections/brands";
+//*========== 22. footer section ==========*//
+@import "sections/footer";
+
+
+/*########## section style ##########*/
+
+//*========== 23. breadcrumb section for all page ==========*//
+@import "pages/breadcrumb";
+//*========== 24. about page ==========*//
+@import "pages/about";
+//*========== 25. service page ==========*//
+@import "pages/service";
+//*========== 26. service details page ==========*//
+@import "pages/service-details";
+//*========== 27. team & team single page ==========*//
+@import "pages/team";
+//*========== 28. portfolio page ==========*//
+@import "pages/portfolio";
+//*========== 29. portfolio details page ==========*//
+@import "pages/portfolio-details";
+//*========== 30. blog grid & blog details page ==========*//
+@import "pages/blog";
+//*========== 31. contact page ==========*//
+@import "pages/contact";
+
+/*########## 32. responsive layout for all page ##########*/
+@import "main/responsive";

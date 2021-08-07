@@ -1,0 +1,213 @@
+.footer {
+    .main-footer {
+        background: $color-2;
+        padding: 120px 0;
+        h3 {
+            &.title {
+                font-size: 30px;
+                line-height: 100%;
+                font-weight: 700;
+                color: $white;
+                margin-top: -3px;
+                margin-bottom: 40px;
+                padding-bottom: 7px;
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 65px;
+                    height: 2px;
+                    background: $color-1;
+                }
+            }
+        }
+        .footer-about {
+            p {
+                font-size: 18px;
+                line-height: 24px;
+                color: $white;
+                margin-top: -5px;
+                margin-bottom: 33px;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                li {
+                    list-style: none;
+                    font-size: 18px;
+                    line-height: 100%;
+                    color: $white;
+                    &:first-child {
+                        margin-right: 25px;
+                    }
+                    a {
+                        text-align: center;
+                        width: 20px;
+                        height: 20px;
+                        line-height: 20px;
+                        font-size: 10px;
+                        border: 1px solid $white;
+                        border-radius: 50%;
+                        color: $white;
+                        &.fb {
+                            background: $fb;
+                        }
+                        &.tw {
+                            background: $tw;
+                        }
+                        &.pin {
+                            background: $pin;
+                        }
+                        &.ld {
+                            background: $ld;
+                        }
+                        &.gl {
+                            background: $ggl;
+                        }
+                    }
+                }
+            }
+        }
+        .links {
+            ul {
+                padding: 0;
+                margin-bottom: -7px;
+                margin-top: -4px;
+                li {
+                    list-style: none;
+                    padding-bottom: 6px;
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+                    a {
+                        font-size: 18px;
+                        line-height: 100%;
+                        color: $white;
+                        padding-left: 18px;
+                        position: relative;
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            transform: translateY(-50%);
+                            width: 10px;
+                            height: 10px;
+                            background: rgba($color-1, 0.5);
+                            border-radius: 50%;
+                            transition: 0.4s;
+                        }
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 3px;
+                            transform: translateY(-50%);
+                            width: 4px;
+                            height: 4px;
+                            background: $color-1;
+                            border-radius: 50%;
+                            transition: 0.4s;
+                        }
+                        &:hover {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .app-download {
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style: none;
+                    &:first-child {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .footer-contact {
+            ul {
+                padding: 0;
+                margin-bottom: 20px;
+                display: flex;
+                &:first-child {
+                    margin-top: -1px;
+                }
+                &:last-child {
+                    margin-bottom: -5px;
+                }
+                li {
+                    list-style: none;
+                    color: $white;
+                    font-size: 18px;
+                    line-height: 22px;
+                    i {
+                        color: $color-1;
+                        margin-right: 10px;
+                    }
+                    span {
+                        display: block;
+                        font-size: 20px;
+                        line-height: 100%;
+                        font-weight: 500;
+                        margin-top: -2px;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        background: $black-3;
+        p {
+            font-size: 18px;
+            line-height: 100%;
+            color: $white;
+            margin-top: -1px;
+            padding-top: 30px;
+            margin-bottom: 0;
+            padding-bottom: 27px;
+        }
+        .links {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            a {
+                font-size: 15px;
+                line-height: 100%;
+                color: $white;
+                margin: 0 15px;
+                position: relative;
+                &:last-child {
+                    margin-right: 0;
+                    &:after {
+                        display: none;
+                    }
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: -16px;
+                    transform: translateY(-50%);
+                    width: 2px;
+                    height: 10px;
+                    background: $white;
+                }
+                &:hover {
+                    color: $color-1;
+                }
+            }
+        }
+    }
+}

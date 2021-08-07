@@ -1,0 +1,48 @@
+.counter {
+    .bg {
+        background: url(../images/counter-bg.jpg) center center no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        .single-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 0;
+            .icon {
+                font-size: 80px;
+                line-height: 100%;
+                color: $color-2;
+                transition: 0.4s;
+                margin-bottom: 19px;
+            }
+            .txt {
+                text-align: center;
+                h3 {
+                    font-size: 65px;
+                    line-height: 100%;
+                    font-weight: 700;
+                    color: $black-2;
+                    margin-bottom: 10px;
+                    transition: 0.4s;
+                }
+                p {
+                    font-size: 25px;
+                    line-height: 100%;
+                    font-weight: 500;
+                    color: $black-2;
+                    margin-bottom: -4px;
+                }
+            }
+            &:hover {
+                .icon {
+                    color: $color-7;
+                }
+                .txt {
+                    h3 {
+                        color: $color-7;
+                    }
+                }
+            }
+        }
+    }
+}

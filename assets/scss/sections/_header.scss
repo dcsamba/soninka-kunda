@@ -1,0 +1,284 @@
+.header {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+    .top-border {
+        height: 24px;
+        margin: 0 24px;
+        background: rgba($color-1, 0.5);
+        position: relative;
+        &:before {
+            position: absolute;
+            content: "";
+            top: 12px;
+            left: -24px;
+            width: 24px;
+            height: 24px;
+            background: rgba($color-1, 0.7);
+            transform: skewY(-45deg);
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            top: 12px;
+            right: -24px;
+            width: 24px;
+            height: 24px;
+            background: rgba($color-1, 0.7);
+            transform: skewY(45deg);
+        }
+    }
+    .bottom-border {
+        height: 24px;
+        margin: 0 24px;
+        background: rgba($color-1, 0.5);
+        position: relative;
+        &:before {
+            position: absolute;
+            content: "";
+            bottom: 12px;
+            left: -24px;
+            width: 24px;
+            height: 24px;
+            background: rgba($color-1, 0.7);
+            transform: skewY(45deg);
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            bottom: 12px;
+            right: -24px;
+            width: 24px;
+            height: 24px;
+            background: rgba($color-1, 0.7);
+            transform: skewY(-45deg);
+        }
+    }
+    .bg {
+        background: $color-1;
+        .top-header {
+            padding: 0 50px;
+            border-bottom: 1px solid $color-3;
+            .top-left {
+                a {
+                    font-family: $special-font;
+                    font-size: 13px;
+                    height: 60px;
+                    line-height: 60px;
+                    color: $white;
+                    &:first-child {
+                        border-right: 1px solid $color-3;
+                        padding-right: 30px;
+                    }
+                    &:last-child {
+                        padding-left: 26px;
+                        font-weight: 600;
+                        i {
+                            font-size: 9px;
+                            svg {
+                                vertical-align: revert;
+                            }
+                        }
+                    }
+                    i {
+                        display: inline-block;
+                        font-size: 10px;
+                        color: $color-2;
+                        margin-right: 4px;
+                        svg {
+                            vertical-align: text-top;
+                        }
+                    }
+                    &:hover {
+                        color: $color-2;
+                    }
+                }
+            }
+            .top-right {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                form {
+                    border-right: 1px solid $color-3;
+                    padding-right: 27px;
+                    select {
+                        height: 60px;
+                        background: transparent;
+                        border: 0;
+                        outline: none;
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: $white;
+                        option {
+                            color: $color-2;
+                        }
+                    }
+                }
+                .follow {
+                    ul {
+                        padding-left: 30px;
+                        margin: 0;
+                        display: flex;
+                        li {
+                            list-style: none;
+                            height: 60px;
+                            line-height: 60px;
+                            font-size: 13px;
+                            font-weight: 700;
+                            color: $white;
+                            &:first-child {
+                                margin-right: 17px;
+                            }
+                            a {
+                                margin-left: 8px;
+                                color: $white;
+                                font-weight: normal;
+                                &:hover {
+                                    color: $color-2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .bottom-header {
+            padding: 0 50px;
+            &.fixed-header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background: $color-1;
+                box-shadow: 0px 10px 20px 0px rgba($black, 0.1);
+            }
+            .custom {
+                width: 100%;
+                height: 100%;
+                .logo {
+                    height: 100%;
+                    margin-right: 10px;
+                    border-right: 1px solid $color-3;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    img {
+                        width: 191px;
+                    }
+                }
+            }
+            .navbar {
+                padding: 0;
+                padding-left: 9px;
+                .navbar-nav {
+                    .nav-item {
+                        padding-left: 30px;
+                        padding: 44px 0 41px 30px;
+                        &.dropdown {
+                            .dropdown-menu {
+                                display: block;
+                                margin-top: 0;
+                                border: 0;
+                                border-radius: 0;
+                                padding: 0;
+                                width: 250px;
+                                box-shadow: 0px 10px 30px 0px rgba($black, 0.15);
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: all 0.3s ease-in;
+                                .dropdown-item {
+                                    font-size: 16px;
+                                    line-height: 100%;
+                                    font-weight: 500;
+                                    color: $black-2;
+                                    padding: 0 20px;
+                                    border-bottom: 1px solid rgba($black, 0.10);
+                                    transition: all 0.3s ease-in;
+                                    &:last-child {
+                                        border-bottom: 0;
+                                    }
+                                    &:hover {
+                                        background: transparent;
+                                        color: $color-1;
+                                    }
+                                }
+                            }
+                            &:hover {
+                                .dropdown-menu {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    .dropdown-item {
+                                        padding: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .nav-link {
+                            padding: 0;
+                            padding-bottom: 2px;
+                            font-size: 16px;
+                            line-height: 100%;
+                            font-weight: 500;
+                            color: $white;
+                            position: relative;
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 0;
+                                height: 1px;
+                                background: $color-2;
+                                transition: all 0.3s ease-in;
+                            }
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                width: 0;
+                                height: 1px;
+                                background: $color-2;
+                                transition: all 0.3s ease-in;
+                            }
+                            &:hover {
+                                color: $color-2;
+                                &:before, &:after {
+                                    width: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .form {
+                border-left: 1px solid $color-3;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                input {
+                    padding-left: 50px;
+                    width: 100%;
+                    height: 100%;
+                    color: $white;
+                    font-size: 16px;
+                    font-weight: 500;
+                    &::placeholder {
+                        color: $color-4;
+                    }
+                }
+                button {
+                    padding: 0;
+                    font-size: 35px;
+                    height: 43px;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

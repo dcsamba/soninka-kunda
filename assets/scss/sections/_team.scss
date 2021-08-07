@@ -1,0 +1,97 @@
+.team {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    .single-box {
+        background: $color-5;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.4s;
+        .part-img {
+            height: 270px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: relative;
+            transition: 0.4s;
+            img {
+                width: auto;
+                height: 100%;
+                transition: 0.4s;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba($color-2, 0.7);
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+                opacity: 0;
+                transition: 0.4s;
+                .social {
+                    background: $color-1;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 34px;
+                    padding: 9px 0;
+                    text-align: center;
+                    margin-right: -34px;
+                    transition: 0.4s;
+                    a {
+                        color: $color-2;
+                        height: 28px;
+                        line-height: 28px;
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .txt {
+            text-align: center;
+            padding: 40px 0 40px;
+            a {
+                font-size: 25px;
+                line-height: 100%;
+                font-weight: 700;
+                color: $black-2;
+                margin-top: -3px;
+                margin-bottom: 9px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 100%;
+                color: $black-2;
+                margin-bottom: -3px;
+            }
+        }
+        &:hover {
+            box-shadow: 5px 5px 15px -5px rgba($black, 0.15);
+            .part-img {
+                margin-right: 35px;
+                img {
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+                .overlay {
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    opacity: 1;
+                    .social {
+                        margin-right: -17px;
+                    }
+                }
+            }
+            .txt {
+                a {
+                    color: $color-1;
+                }
+            }
+        }
+    }
+}

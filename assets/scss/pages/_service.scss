@@ -1,0 +1,260 @@
+.pricing {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    .single-box {
+        background: url(../images/pricing-bg.jpg) center center no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        width: 100%;
+        &.center {
+            .top {
+                h3 {
+                    padding: 43px 0;
+                }
+            }
+            .bottom {
+                padding-bottom: 105px;
+            }
+        }
+        .top {
+            text-align: center;
+            h3 {
+                font-size: 25px;
+                line-height: 100%;
+                font-weight: 700;
+                color: $black-2;
+                padding: 30px 0;
+                margin-top: -3px;
+                margin-bottom: -4px;
+            }
+            h2 {
+                background: $color-2;
+                color: $white;
+                font-size: 50px;
+                line-height: 100%;
+                font-weight: 700;
+                padding-top: 23px;
+                padding-bottom: 19px;
+                margin-bottom: 0;
+                .symbol {
+                    font-size: 30px;
+                    vertical-align: text-top;
+                    margin-top: 2px;
+                }
+                .limitation {
+                    font-size: 25px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .middle {
+            padding-top: 65px;
+            padding-bottom: 62px;
+            ul {
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                li {
+                    list-style: none;
+                    font-size: 22px;
+                    line-height: 50px;
+                    color: $black-2;
+                    span {
+                        color: $color-1;
+                    }
+                }
+            }
+        }
+        .bottom {
+            text-align: center;
+            padding-bottom: 80px;
+            a {
+                height: 80px;
+                line-height: 78px;
+                border: 1px solid $color-2;
+                border-radius: 10px;
+                padding: 0 45px;
+                font-size: 25px;
+                font-weight: 500;
+                color: $black-2;
+                &:hover {
+                    background: $color-2;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.service-inner {
+    padding-bottom: 30px;
+    .single-box {
+        margin-bottom: 30px;
+        &:before {
+            background: $color-1;
+        }
+        &:after {
+            display: none;
+        }
+        .part-icon {
+            border-color: $color-1;
+            color: $color-1;
+        }
+    }
+}
+
+.world-connected {
+    padding-top: 60px;
+    padding-bottom: 120px;
+    .part-form {
+        background: url(../images/form-bg.jpg);
+        background-size: cover;
+        border-radius: 10px;
+        padding: 70px 40px;
+        box-shadow: 0px 0px 20px 0px rgba($black, 0.2);
+        h2 {
+            font-size: 45px;
+            line-height: 100%;
+            font-weight: 700;
+            color: $white;
+            margin-top: -4px;
+            margin-bottom: 53px;
+        }
+        form {
+            input {
+                width: 100%;
+                height: 50px;
+                padding: 0 20px;
+                margin-bottom: 30px;
+                background: #BD6416;
+                border-radius: 5px;
+                color: $white;
+                &::placeholder {
+                    color: rgba($white, 0.7);
+                }
+            }
+            textarea {
+                width: 100%;
+                height: 185px;
+                padding: 15px 20px;
+                margin-bottom: 50px;
+                background: #BD6416;
+                border-radius: 5px;
+                color: $white;
+                &::placeholder {
+                    color: rgba($white, 0.7);
+                }
+            }
+            button {
+                height: 50px;
+                line-height: 50px;
+                background: $white;
+                color: $color-1;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 0 20px;
+                border-radius: 5px;
+                &:hover {
+                    background: $color-2;
+                }
+            }
+        }
+    }
+    .part-txt {
+        h4 {
+            font-size: 25px;
+            line-height: 100%;
+            font-weight: 700;
+            text-transform: capitalize;
+            color: $color-1;
+            padding-left: 65px;
+            margin-top: -2px;
+            margin-bottom: 22px;
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 4px;
+                left: 0;
+                width: 50px;
+                height: 2px;
+                background: $color-1;
+                border-radius: 1px;
+            }
+        }
+        h2 {
+            font-size: 45px;
+            line-height: 55px;
+            font-weight: 700;
+            color: $black-2;
+            margin-bottom: 48px;
+        }
+        .details {
+            background: url(../images/world-connected.png) center center no-repeat;
+            background-size: contain;
+            height: 420px;
+            position: relative;
+            .circle {
+                position: absolute;
+                width: 55px;
+                height: 55px;
+                background: rgba($color-2, 0.7);
+                border-radius: 50%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                z-index: 2;
+                &.one {
+                    top: 45px;
+                    left: 92px;
+                }
+                &.two {
+                    top: 5px;
+                    left: 252px;
+                }
+                &.three {
+                    top: 61px;
+                    left: 386px;
+                }
+                &.four {
+                    top: 17px;
+                    right: 125px;
+                }
+                &.five {
+                    left: 176px;
+                    bottom: 110px;
+                }
+                &.six {
+                    left: 394px;
+                    bottom: 64px;
+                }
+                &.seven {
+                    top: 175px;
+                    right: 216px;
+                }
+                &.eight {
+                    bottom: 60px;
+                    right: 58px;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    width: 45px;
+                    height: 45px;
+                    background: $color-2;
+                    border-radius: 50%;
+                    z-index: -1;
+                }
+                span {
+                    display: block;
+                    font-size: 8px;
+                    line-height: 10px;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

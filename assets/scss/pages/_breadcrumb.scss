@@ -1,0 +1,57 @@
+.breadcrumb {
+    padding: 0;
+    padding-top: 262px;
+    margin-bottom: 0;
+    background-size: cover;
+    border-radius: 0;
+    &.bg-1 {
+        background: url(../images/breadcrumb-bg-1.jpg) center center no-repeat;
+    }
+    &.bg-2 {
+        background: url(../images/breadcrumb-bg-2.jpg) center center no-repeat;
+    }
+    &.bg-3 {
+        background: url(../images/breadcrumb-bg-3.jpg) center center no-repeat;
+    }
+    &.bg-4 {
+        background: url(../images/breadcrumb-bg-4.jpg) center center no-repeat;
+    }
+    &.bg-5 {
+        background: url(../images/breadcrumb-bg-5.jpg) center center no-repeat;
+    }
+    &.bg-6 {
+        background: url(../images/breadcrumb-bg-6.jpg) center center no-repeat;
+    }
+    .part-txt {
+        text-align: center;
+        padding: 150px 0;
+        h1 {
+            font-size: 50px;
+            line-height: 60px;
+            font-weight: 700;
+            color: $white;
+            margin-top: -11px;
+            margin-bottom: 35px;
+        }
+        ul {
+            padding: 0;
+            margin-bottom: -3px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            li {
+                list-style: none;
+                font-size: 18px;
+                line-height: 100%;
+                color: $white;
+                margin-right: 30px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                i {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
